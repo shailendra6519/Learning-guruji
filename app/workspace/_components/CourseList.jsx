@@ -32,7 +32,7 @@ function CourseList() {
       </div>:
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5'>
         {CourseList.map((course, index) => (
-          <CourseCard course={course} key={index}/>
+          <CourseCard course={course} key={index} refreshData={GetCourseList}/>
           ))}
         </div>}
     </div>

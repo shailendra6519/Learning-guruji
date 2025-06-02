@@ -53,8 +53,11 @@ function AppSidebar() {
   return (
        <Sidebar>
       <SidebarHeader className={'p-4'}>
-        <Image src='logo.svg' width={130} height={120} alt="logo" />
-        {/* <img src="logo.svg" width={130} height={120} alt="logo image" /> */}
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <i className="fas fa-brain text-2xl bg-gradient-to-r from-indigo-600 to-purple-500 gradient-text"></i>
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-800">Learning-Guruji <span
+                            className="bg-gradient-to-r from-indigo-600 to-purple-500 gradient-text">AI</span></span>
+                </a>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
